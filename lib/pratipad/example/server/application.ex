@@ -18,7 +18,8 @@ defmodule Pratipad.Example.Server.Application do
          forwarder_name: :pratipad_backwarder_input,
          backwarder_name: :pratipad_forwarder_output,
          max_retry_count: :infinity
-       ]}
+       ]},
+       {Pratipad.Example.Server.Repo, []}
     ]
 
     opts = [strategy: :one_for_one, name: Pratipad.Example.Server.Supervisor]
