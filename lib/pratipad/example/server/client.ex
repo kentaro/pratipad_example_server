@@ -4,7 +4,7 @@ defmodule Pratipad.Example.Server.Client do
 
   @impl Client.Push
   def push_message() do
-    "pong!"
+    :open_the_door
   end
 
   @impl Client.Backward
