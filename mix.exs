@@ -24,7 +24,11 @@ defmodule Pratipad.Example.Server.MixProject do
     [
       {:pratipad_client, path: "../pratipad_client"},
       {:ecto_sql, "~> 3.6.2"},
-      {:myxql, "~> 0.5.1"}
+      {:myxql, "~> 0.5.1"},
+      {:livebook, "~> 0.2.0"},
+      {:vega_lite, "~> 0.1.0"},
+      {:kino, "~> 0.2.1"},
+      {:jason, "~> 1.0"}
     ]
   end
 end
