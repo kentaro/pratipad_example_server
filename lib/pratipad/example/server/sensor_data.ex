@@ -6,6 +6,8 @@ defmodule Pratipad.Example.Server.SensorData do
     field(:humidity_rh, :float)
     field(:pressure_pa, :float)
     field(:temperature_c, :float)
-    field(:percipitation, :integer)
+    field(:precipitation, :integer)
+    field(:device_id, :string)
+    field(:measured_at, :naive_datetime)
   end
 end

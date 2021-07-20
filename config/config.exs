@@ -29,6 +29,6 @@ config :livebook,
        :pratipad_cookie
 
 config :livebook,
-  root_path: "/tmp/livebooks"
+  root_path: "./livebooks"
 
 config :phoenix, :json_library, Jason
