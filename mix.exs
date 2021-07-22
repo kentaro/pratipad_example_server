@@ -22,7 +22,7 @@ defmodule Pratipad.Example.Server.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:pratipad_client, path: "../pratipad_client"},
+      {:pratipad_client, github: "kentaro/pratipad_client"},
       {:ecto_sql, "~> 3.6.2"},
       {:myxql, "~> 0.5.0"},
       {:livebook, "~> 0.2.0"},
