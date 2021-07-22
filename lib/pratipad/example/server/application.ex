@@ -10,6 +10,7 @@ defmodule Pratipad.Example.Server.Application do
     children = [
       {Pratipad.Example.Server.Client,
        [
+         name: :pratipad_example_server,
          forwarder_name: :pratipad_backwarder_input,
          backwarder_name: :pratipad_forwarder_output,
          max_retry_count: :infinity

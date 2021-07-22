@@ -26,7 +26,7 @@ defmodule Pratipad.Example.Server.Client do
     # Pushes a message if the conditions below meet.
     # The conditions mean the air is undesirable and you can open the door
     # because the rain outside is not so heavy.
-    if message.data.co2_concentration > 500 && message.data.precipitation < 5 do
+    if message.data.co2_concentration > 800 && message.data.precipitation < 5 do
       GenServer.cast(self(), :push_message)
     end
   end
