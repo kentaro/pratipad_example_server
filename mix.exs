@@ -14,7 +14,7 @@ defmodule Pratipad.Example.Server.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :sasl, :epmdless, :ssl, :crypto, :eex],
       mod: {Pratipad.Example.Server.Application, []}
     ]
   end
@@ -24,11 +24,13 @@ defmodule Pratipad.Example.Server.MixProject do
     [
       {:pratipad_client, path: "../pratipad_client"},
       {:ecto_sql, "~> 3.6.2"},
-      {:myxql, "~> 0.5.1"},
+      {:myxql, "~> 0.5.0"},
       {:livebook, "~> 0.2.0"},
       {:vega_lite, "~> 0.1.0"},
       {:kino, "~> 0.2.1"},
-      {:jason, "~> 1.0"}
+      {:jason, "~> 1.0"},
+      {:epmdless, "~> 0.1.4"},
+      {:distillery, "~> 2.1.1"}
     ]
   end
 end
