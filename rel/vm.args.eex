@@ -30,6 +30,6 @@
 -smp auto
 
 # epmdless
--proto_dist epmdless_proto
 -start_epmd false
 -epmd_module epmdless_client
+-erl_epmd_port 17013
