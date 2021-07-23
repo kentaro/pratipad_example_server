@@ -29,7 +29,7 @@ defmodule Pratipad.Example.Server.MixProject do
       {:vega_lite, "~> 0.1.0"},
       {:kino, "~> 0.2.1"},
       {:jason, "~> 1.0"},
-      {:epmdless, "~> 0.2.0"},
+      {:epmdless, github: "tsloughter/epmdless"},
       {:distillery, "~> 2.1.1"}
     ]
   end
