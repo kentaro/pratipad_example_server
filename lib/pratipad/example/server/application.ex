@@ -5,7 +5,7 @@ defmodule Pratipad.Example.Server.Application do
 
   @impl true
   def start(_type, _args) do
-    # connect_node()
+    connect_node()
 
     children = [
       {Pratipad.Example.Server.Client,
@@ -23,14 +23,10 @@ defmodule Pratipad.Example.Server.Application do
   end
 
   defp connect_node() do
-    # node_name = Application.fetch_env!(:pratipad_example_server, :node_name)
-    # cookie = Application.fetch_env!(:pratipad_example_server, :cookie)
-    # server_name = Application.fetch_env!(:pratipad_example_server, :server_name)
-    # server_port = Application.fetch_env!(:pratipad_example_server, :server_port)
+    server_name = Application.fetch_env!(:pratipad_example_server, :server_name)
+    server_port = Application.fetch_env!(:pratipad_example_server, :server_port)
 
-    # # Node.start(node_name)
-    # # Node.set_cookie(cookie)
-    # :epmdless_dist.add_node(server_name, server_port)
-    # Node.connect(server_name)
+    :epmdless_dist.add_node(server_name, server_port)
+    Node.connect(server_name)
   end
 end
