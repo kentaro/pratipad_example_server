@@ -3,7 +3,7 @@
 ## http://erlang.org/doc/man/erl.html
 
 ## Name of the node
--name ${NODE}@172.16.0.129
+-name server@server.pratipad.local
 
 ## Cookie for distributed erlang
 -setcookie pratipad_cookie
@@ -29,7 +29,6 @@
 # On OTP21+, this is not needed anymore.
 -smp auto
 
-# epmdless
--start_epmd false
--epmd_module epmdless_client
--erl_epmd_port 17013
+# TLS settings
+-proto_dist inet_tls
+-ssl_dist_optfile /app/pratipad_example_server/config/tls.conf
