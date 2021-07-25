@@ -1,8 +1,6 @@
 import Config
 
 config :pratipad_example_server,
-  node_name: :"server@server.pratipad.local",
-  cookie: :pratipad_cookie,
   server_name: :"dataflow@dataflow.pratipad.local",
   ecto_repos: [Pratipad.Example.Server.Repo]
 
