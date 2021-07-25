@@ -14,7 +14,7 @@ defmodule Pratipad.Example.Server.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :sasl, :epmdless, :ssl, :crypto, :eex],
+      extra_applications: [:logger],
       mod: {Pratipad.Example.Server.Application, []}
     ]
   end
@@ -29,8 +29,6 @@ defmodule Pratipad.Example.Server.MixProject do
       {:vega_lite, "~> 0.1.0"},
       {:kino, "~> 0.2.1"},
       {:jason, "~> 1.0"},
-      {:epmdless, github: "tsloughter/epmdless"},
-      {:distillery, "~> 2.1.1"}
     ]
   end
 end
