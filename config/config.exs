@@ -1,10 +1,9 @@
 import Config
 
 config :pratipad_example_server,
-  node_name: :"server@172.16.0.129",
+  node_name: :"server@server.pratipad.local",
   cookie: :pratipad_cookie,
-  server_name: :"dataflow@172.16.0.127",
-  server_port: 17012,
+  server_name: :"dataflow@dataflow.pratipad.local",
   ecto_repos: [Pratipad.Example.Server.Repo]
 
 config :pratipad_example_server, Pratipad.Example.Server.Repo,

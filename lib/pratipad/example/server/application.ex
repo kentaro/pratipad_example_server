@@ -24,9 +24,6 @@ defmodule Pratipad.Example.Server.Application do
 
   defp connect_node() do
     server_name = Application.fetch_env!(:pratipad_example_server, :server_name)
-    server_port = Application.fetch_env!(:pratipad_example_server, :server_port)
-
-    :epmdless_dist.add_node(server_name, server_port)
     Node.connect(server_name)
   end
 end

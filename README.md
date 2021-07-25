@@ -1,21 +1,9 @@
 # PratipadServer
 
-**TODO: Add description**
+## Usage
 
-## Installation
+Start a dataflow:
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `pratipad_server` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:pratipad_server, "~> 0.1.0"}
-  ]
-end
+```sh
+$ ERL_DIST_PORT=44300 iex --name server@server.pratipad.local --erl "-proto_dist inet_tls" --erl "-ssl_dist_optfile config/tls.conf" -S mix
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/pratipad_server](https://hexdocs.pm/pratipad_server).
-
