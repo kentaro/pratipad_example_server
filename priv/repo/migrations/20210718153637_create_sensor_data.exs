@@ -7,7 +7,7 @@ defmodule Pratipad.Example.Server.Repo.Migrations.CreateSensorData do
       add :humidity_rh, :float, null: false
       add :pressure_pa, :float, null: false
       add :temperature_c, :float, null: false
-      add :precipitation, :integer, null: false
+      add :precipitation, :float, null: false
       add :device_id, :string, null: false
       add :measured_at, :naive_datetime, null: false
     end
