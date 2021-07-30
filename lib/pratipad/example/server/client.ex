@@ -8,8 +8,8 @@ defmodule Pratipad.Example.Server.Client do
   end
 
   @impl Client.Backward
-  def backward_message(message) do
-    Logger.info("backward_message: #{inspect(message)}")
+  def forward_message(message) do
+    Logger.info("forward_message: #{inspect(message)}")
 
     data = %Pratipad.Example.Server.SensorData{
       co2_concentration: message.data.co2_concentration,
