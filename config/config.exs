@@ -1,7 +1,6 @@
 import Config
 
 config :pratipad_example_server,
-  server_name: :"dataflow@dataflow.pratipad.local",
   ecto_repos: [Pratipad.Example.Server.Repo]
 
 config :pratipad_example_server, Pratipad.Example.Server.Repo,
